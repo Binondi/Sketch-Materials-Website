@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Materials</title>
+
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="logo.png" class="logo" alt="Logo">
+                <div class="name">Sketch Materials</div>
+            </div>
+            <div class="nav-right">
+                <div class="menu-icon" onclick="" id="menu-icon">
+                    <img src="menu.svg" alt="Menu">
+                </div>
+                <div class="popup-menu" id="popup-menu">
+                    <ul class="popup-menu-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Features</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Services</a></li>
+                        <li><a href="/">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+
+            <div class="rounded-description">
+                <span id="element"></span>
+                <div class="description">
+                    Sketch Materials is a single app that provides Java code, custom blocks, local libraries, Lottie
+                    animations, and many more resources for Sketchware Pro.
+                </div>
+
+
+            </div>
+            <div class="button-container">
+                <button id="download"
+                    onclick="downloadFile()">
+                    Download
+                </button>
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="textGray">Features of Sketch Materials</span>
+            <h1>Main Features</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="java.png" alt="Java">
+                    <div class="vertical-title">
+                        Java Codes
+                    </div>
+                    <div class="vertical-desc">
+                        Sketch Materials is a single app that provides hundreds of Java codes for Sketchware Pro. The
+                        app allows users to directly copy Java code from the app and use it in the Sketchware Pro app,
+                        streamlining the development process and enhancing productivity.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="block.svg" alt="Kotlin">
+                    <div class="vertical-title">
+                        Custom Blocks
+                    </div>
+                    <div class="vertical-desc">
+                        Sketch Materials is a single app that provides various types of custom blocks for Sketchware
+                        Pro. The app allows users to directly download custom blocks from the app and use them in the
+                        Sketchware Pro app, streamlining the development process and enhancing productivity.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="library.svg" alt="XML">
+                    <div class="vertical-title">
+                        Local library
+                    </div>
+                    <div class="vertical-desc">
+                        Sketch Materials is a single app that provides various types of Local Library for Sketchware
+                        Pro. The app allows users to directly download the libraries from the app and use them in the
+                        Sketchware Pro app, streamlining the development process and enhancing productivity.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="animations.svg" alt="Firebase">
+                    <div class="vertical-title">
+                        Lottie Animations
+                    </div>
+                    <div class="vertical-desc">
+                        Sketch Materials is a single app that provides various types of Lottie Animations for Sketchware
+                        Pro. The app allows users to directly download the Animations from the app and use them in the
+                        Sketchware Pro app, streamlining the development process and enhancing productivity.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <hr class="bottom-line">
+    <footer class="footer">
+        <div class="firstFooter">
+            <div class="inside-section">
+                <div class="first-row">
+                    <h1 class="first-title">Sketch Materials</h1>
+                    <a href="javascript:downloadFile()" class="download-text">Download</a>
+                    <a href="mailto:team@example.com" class="content">Contact: borthakurbinondi@gmail.com</a>
+                    <a href="https://github.com/Binondi" class="github">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <p class="copyright">© Sketch Materials - Binondi Borthakur</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Sketch Materials'],
+            typeSpeed: 50,
+        });
+
+        function toggleMenu() {
+            var popupMenu = document.getElementById('popup-menu');
+            popupMenu.classList.toggle('show');
+        }
+        function downloadFile() {
+            const url = 'https://github.com/Binondi/Sketch-Materials/releases/download/1.0.0/Sketch.Materials.1.0.apk';
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>

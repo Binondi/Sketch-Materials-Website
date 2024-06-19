@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 4, 22);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Updated for better alignment */
+    align-items: center;
+    padding: 0 20px;
+    /* Added padding */
+    height: 60px;
+    background: rgba(48, 48, 48, 0.308);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    /* Reduced margin for better spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(50, 139, 255);
+    font-size: 1.3rem;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    /* Adjust spacing between logo and text */
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+main {
+    margin-top: 60px;
+    padding: 20px;
+    /* Added padding */
+    /* This pushes the main content below the fixed nav */
+}
+
+main hr {
+    border: 0;
+    background: rgb(0, 25, 58);
+    height: 1px;
+    margin: 40px 0;
+    /* Adjusted margin */
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+
+}
+
+
+.rightSection {
+    margin: 6px auto;
+
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.rounded-description {
+    border: 1px solid rgba(0, 54, 116, 0.74);
+    /* Adjust color as needed */
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgb(7, 9, 31);
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    width: 200px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+    margin: 35px;
+}
+
+button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 5% 10%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+button:active {
+    transform: scale(0.9);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+    transition: 0.5s;
+}
+
+
+.purple {
+    color: rgb(50, 139, 255);
+}
+
+.textGray {
+    color: rgb(50, 139, 255);
+}
+
+#element {
+    font-size: 2.5rem;
+    margin: 4px;
+    font-weight: bold;
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.secondSection {
+    max-width: 90vw;
+    margin: auto;
+    height: auto;
+    /* Changed to auto for better adaptability */
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.secondSection .box {
+    width: 100%;
+    height: auto;
+    /* Changed to auto */
+    margin: 40px 0;
+    /* Adjusted margin */
+    display: flex;
+    flex-wrap: wrap;
+    /* Added flex-wrap for responsiveness */
+    justify-content: space-between;
+    /* Added to space items */
+}
+
+.secondSection .vertical {
+    flex: 1 1 30%;
+    /* Adjusted flex for responsiveness */
+    margin: 20px;
+    /* Added margin */
+    text-align: center;
+    /* Centered text */
+    border: 1px solid rgb(0, 35, 75);
+    /* Adjust color as needed */
+    border-radius: 15px;
+    padding: 25px;
+    background-color: rgba(19, 19, 34, 0.534);
+}
+
+.vertical-title {
+    margin-top: 10px;
+    /* Adjusted margin */
+}
+
+.vertical-desc {
+    margin-top: 10px;
+    /* Adjusted margin */
+    font-size: 0.9rem;
+    /* Adjusted font size */
+    color: gray;
+}
+
+.image-top {
+    width: 23px;
+    margin-top: -32px;
+    /* Adjusted margin */
+}
+
+@media (min-width: 600px) {
+    .firstSection {
+        flex-direction: row;
+        /* Row layout for larger screens */
+        text-align: left;
+        /* Left-align text */
+    }
+
+    .leftSection,
+    .rightSection {
+        width: 45%;
+    }
+}
+
+@media (max-width: 599px) {
+
+    .leftSection,
+    .rightSection {
+        width: 100%;
+    }
+}
+
+.popup-menu {
+    position: absolute;
+    top: 60px;
+    /* Adjust as needed to position below the nav bar */
+    right: 20px;
+    background: rgb(3, 0, 29);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    z-index: 1100;
+    /* Ensure it's above the nav */
+    flex-direction: row;
+    /* Default: horizontal */
+}
+
+.popup-menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup-menu-links li {
+    margin-bottom: 10px;
+    /* Adjust spacing between each menu item */
+}
+
+.popup-menu-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    /* Adjust font size as needed */
+    display: block;
+    /* Ensures each link occupies full width */
+    padding: 8px 16px;
+    /* Adjust padding for better touch areas */
+}
+
+.popup-menu-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Example hover background */
+    border-radius: 3px;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 600px) {
+    .popup-menu {
+        flex-direction: column;
+        /* Display vertically on smaller screens */
+        right: 0;
+        /* Adjust position to fit screen width */
+        width: 100%;
+        /* Ensure menu covers full width */
+        top: 50px;
+        /* Adjust top position as needed */
+    }
+
+    .popup-menu-links li {
+        margin-bottom: 8px;
+        /* Smaller spacing for vertical layout */
+    }
+
+    .popup-menu-links li a {
+        padding: 10px;
+        /* Adjust padding for touch-friendly areas */
+    }
+}
+
+.show {
+    display: flex;
+}
+.bottom-line{
+    border: 0;
+    background: rgb(0, 25, 58);
+    height: 1px;
+    margin: 40px 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #000f1f;
+}
+
+.firstFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inside-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.first-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+.download-text, .content, .github {
+    text-decoration: none;
+    color: #3f8cff;
+    margin: 3px 0; /* Margin for vertical spacing */
+    font-size: 0.8rem;
+}
+
+.text-center {
+    margin-top: 10px;
+}
+
+.copyright {
+    font-size: 0.5rem;
+}
