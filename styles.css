@@ -96,7 +96,7 @@ main hr {
 .rightSection {
     margin: 6px auto;
 
-    width: 100%;
+    width: 60%;
     align-items: center;
     text-align: center;
 
@@ -377,4 +377,7 @@ button:active {
 
 .copyright {
     font-size: 0.8rem;
+}
+.version{
+    color: #3f8cff;
 }
