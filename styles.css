@@ -565,7 +565,11 @@ main hr {
 }
 
 .cta-buttons {
-    margin-bottom: 20px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
 }
 
 .cta-note {
