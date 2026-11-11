@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sketch Materials</title>
+
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html" class="nav-brand">
+                    <img src="logo.png" class="logo" alt="Sketch Materials Logo">
+                    <div class="name">Sketch Materials</div>
+                </a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="https://github.com/Binondi/Sketch-Materials/releases/download/1.3/Sketch.Materials.1.3.apk" class="nav-download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+                <div class="menu-icon" onclick="toggleMenu()" id="menu-icon">
+                    <img src="menu.svg" alt="Menu">
+                </div>
+                <div class="popup-menu" id="popup-menu">
+                    <ul class="popup-menu-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://github.com/Binondi/Sketch-Materials/releases/download/1.3/Sketch.Materials.1.3.apk">Download</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <h1 class="page-hero-title">Get In Touch</h1>
+            <p class="page-hero-subtitle">Have a question, suggestion, or just want to say hello? We'd love to hear from you.</p>
+        </section>
+
+        <hr>
+
+        <!-- Contact Form & Info Section -->
+        <section class="page-section">
+            <span class="textGray">Reach Out To Us</span>
+            <h2 class="page-section-title">Send a Message</h2>
+
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <form action="mailto:borthakurbinondi@gmail.com" method="POST" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="Subject" placeholder="What is this about?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="Message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit-btn">Send Message</button>
+                    </form>
+                    <p class="form-note">
+                        You can also email us directly at
+                        <a href="mailto:borthakurbinondi@gmail.com">borthakurbinondi@gmail.com</a>
+                    </p>
+                </div>
+
+                <!-- Contact Info Cards -->
+                <div class="contact-info-cards">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#328BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">Email</h3>
+                        <p class="contact-card-text">
+                            <a href="mailto:borthakurbinondi@gmail.com">borthakurbinondi@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#328BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                <path d="M9 18c-4.51 2-5-2-7-2"/>
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">GitHub</h3>
+                        <p class="contact-card-text">
+                            <a href="https://github.com/Binondi" target="_blank" rel="noopener noreferrer">github.com/Binondi</a>
+                        </p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#328BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="contact-card-title">Location</h3>
+                        <p class="contact-card-text">India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- FAQ Section -->
+        <section class="page-section">
+            <span class="textGray">Common Questions</span>
+            <h2 class="page-section-title">Frequently Asked Questions</h2>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is the app free?</span>
+                        <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Sketch Materials is completely free to download and use. All resources including Java codes, custom blocks, local libraries, and Lottie animations are available at no cost. We believe in making development tools accessible to everyone.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I install custom blocks?</span>
+                        <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>To install custom blocks, open Sketch Materials and browse the Custom Blocks section. Select the block you want to use and tap the download button. The block file will be saved to your device. Then, open Sketchware Pro and import the block file through the block manager. The custom block will be ready to use in your projects.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is it safe to use?</span>
+                        <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Sketch Materials is completely safe to use. The app does not collect any personal data, and all resources are verified before being made available. The app is open-source and the source code is available on GitHub for anyone to review. You can download it with confidence.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Which version of Sketchware Pro is supported?</span>
+                        <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sketch Materials is designed to work with the latest versions of Sketchware Pro. We recommend using the most recent stable release for the best compatibility. Most Java codes and custom blocks are compatible with Sketchware Pro 6.3.0 and above. If you encounter compatibility issues, please report them on our GitHub repository.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I report a bug?</span>
+                        <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>If you encounter a bug, you can report it by creating an issue on our <a href="https://github.com/Binondi" target="_blank" rel="noopener noreferrer">GitHub repository</a>. Please include a detailed description of the issue, steps to reproduce it, your device model, Android version, and Sketchware Pro version. You can also reach out to us via email at <a href="mailto:borthakurbinondi@gmail.com">borthakurbinondi@gmail.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Sketch Materials" class="footer-logo-img">
+                        <h3 class="first-title">Sketch Materials</h3>
+                    </div>
+                    <p class="footer-brand-desc">
+                        The ultimate toolkit for Sketchware Pro developers. Build better apps, faster.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/Binondi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:borthakurbinondi@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="https://github.com/Binondi/Sketch-Materials/releases/download/1.3/Sketch.Materials.1.3.apk">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="https://github.com/Binondi/Sketch-Materials" target="_blank" rel="noopener noreferrer">GitHub Repo</a></li>
+                            <li><a href="https://github.com/Binondi/Sketch-Materials/releases" target="_blank" rel="noopener noreferrer">Changelog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2024 - 2026 Sketch Materials — Made with <i class="fas fa-heart" style="color: #ff5ef7;"></i> by Binondi Borthakur</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var popupMenu = document.getElementById('popup-menu');
+            popupMenu.classList.toggle('show');
+        }
+
+        function toggleFaq(button) {
+            var faqItem = button.parentElement;
+            var isActive = faqItem.classList.contains('active');
+
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(function (item) {
+                item.classList.remove('active');
+            });
+
+            // Open clicked item if it wasn't already open
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Close popup menu when clicking outside
+        document.addEventListener('click', function (e) {
+            var popupMenu = document.getElementById('popup-menu');
+            var menuIcon = document.getElementById('menu-icon');
+            if (!menuIcon.contains(e.target) && !popupMenu.contains(e.target)) {
+                popupMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+
+</html>

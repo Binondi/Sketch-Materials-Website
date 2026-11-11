@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Sketch Materials</title>
+
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html" class="nav-brand">
+                    <img src="logo.png" class="logo" alt="Sketch Materials Logo">
+                    <div class="name">Sketch Materials</div>
+                </a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="https://github.com/Binondi/Sketch-Materials/releases/download/1.3/Sketch.Materials.1.3.apk" class="nav-download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+                <div class="menu-icon" onclick="toggleMenu()" id="menu-icon">
+                    <img src="menu.svg" alt="Menu">
+                </div>
+                <div class="popup-menu" id="popup-menu">
+                    <ul class="popup-menu-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://github.com/Binondi/Sketch-Materials/releases/download/1.3/Sketch.Materials.1.3.apk">Download</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <h1 class="page-title">About <span class="gradient-text">Sketch Materials</span></h1>
+            <p class="page-subtitle">Empowering Sketchware Pro developers with a comprehensive toolkit for building amazing Android apps.</p>
+        </section>
+
+        <hr>
+
+        <!-- About Section -->
+        <section class="page-section">
+            <span class="textGray">Who We Are</span>
+            <h2 class="section-heading">About Sketch Materials</h2>
+            <div class="content-card">
+                <p class="card-text">
+                    Sketch Materials is a dedicated Android application designed to empower Sketchware Pro developers with a comprehensive and ever-growing toolkit. Our mission is simple: to make mobile app development more accessible, efficient, and enjoyable for everyone — from beginners taking their first steps in coding to experienced developers looking to speed up their workflow.
+                </p>
+                <p class="card-text" style="margin-top: 16px;">
+                    We provide hundreds of ready-to-use Java codes, custom blocks, local libraries, and Lottie animations — all curated and organized so you can find exactly what you need and integrate it into your Sketchware Pro projects with just a few taps.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Our Story Section -->
+        <section class="page-section">
+            <span class="textGray">How It All Began</span>
+            <h2 class="section-heading">Our Story</h2>
+            <div class="content-card">
+                <p class="card-text">
+                    Sketch Materials was born out of a deep passion for mobile development and the Sketchware Pro community. As a developer working within Sketchware Pro, our founder — Binondi Borthakur — experienced firsthand the challenges of finding reliable code snippets, custom blocks, and resources scattered across forums, groups, and websites.
+                </p>
+                <p class="card-text" style="margin-top: 16px;">
+                    The idea was straightforward: what if all these essential resources were available in one single, beautifully organized app? That spark of inspiration led to the creation of Sketch Materials — a one-stop solution that has since grown into a thriving toolkit trusted by thousands of Sketchware Pro developers worldwide.
+                </p>
+                <p class="card-text" style="margin-top: 16px;">
+                    From a small personal project to a comprehensive resource hub, Sketch Materials continues to evolve with every update, driven by community feedback and the goal of making development accessible to all.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Statistics Section -->
+        <section class="page-section">
+            <span class="textGray">By The Numbers</span>
+            <h2 class="section-heading">Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Java Codes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Custom Blocks</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Local Libraries</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Lottie Animations</div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- What We Offer Section -->
+        <section class="page-section">
+            <span class="textGray">Our Resources</span>
+            <h2 class="section-heading">What We Offer</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <img src="java.png" alt="Java Codes">
+                    </div>
+                    <h3 class="offer-title">Java Codes</h3>
+                    <p class="offer-desc">
+                        Access a massive library of ready-to-use Java code snippets covering UI components, animations, API integrations, file handling, and much more. Simply copy, paste, and build.
+                    </p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <img src="block.svg" alt="Custom Blocks">
+                    </div>
+                    <h3 class="offer-title">Custom Blocks</h3>
+                    <p class="offer-desc">
+                        Extend Sketchware Pro's capabilities with our curated collection of custom blocks. From advanced logic to UI manipulation, these blocks simplify complex operations into drag-and-drop simplicity.
+                    </p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <img src="library.svg" alt="Local Libraries">
+                    </div>
+                    <h3 class="offer-title">Local Libraries</h3>
+                    <p class="offer-desc">
+                        Download and integrate powerful local libraries directly into your projects. Our collection includes libraries for networking, image loading, material design, and more.
+                    </p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <img src="animations.svg" alt="Lottie Animations">
+                    </div>
+                    <h3 class="offer-title">Lottie Animations</h3>
+                    <p class="offer-desc">
+                        Bring your apps to life with stunning Lottie animations. Browse our growing collection of lightweight, scalable animations perfect for loading screens, onboarding, and UI feedback.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Our Vision Section -->
+        <section class="page-section">
+            <span class="textGray">Looking Ahead</span>
+            <h2 class="section-heading">Our Vision</h2>
+            <div class="content-card vision-card">
+                <div class="vision-quote">
+                    "Making app development accessible to everyone, empowering the next generation of developers."
+                </div>
+                <p class="card-text" style="margin-top: 20px;">
+                    We believe that everyone should have the opportunity to create amazing mobile applications, regardless of their background or experience level. Sketchware Pro has already broken down barriers by enabling visual app development — and Sketch Materials takes it a step further by putting professional-grade resources right at your fingertips.
+                </p>
+                <p class="card-text" style="margin-top: 16px;">
+                    Our vision is to continuously grow our resource library, foster a supportive community, and inspire the next generation of developers to turn their ideas into reality. Every code snippet, every custom block, and every animation in Sketch Materials is a building block toward that future.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- The Developer Section -->
+        <section class="page-section">
+            <span class="textGray">Meet The Creator</span>
+            <h2 class="section-heading">The Developer</h2>
+            <div class="developer-card">
+                <div class="developer-avatar">
+                    <img src="logo.png" alt="Binondi Borthakur">
+                </div>
+                <div class="developer-info">
+                    <h3 class="developer-name">Binondi Borthakur</h3>
+                    <p class="developer-role">Founder & Developer</p>
+                    <p class="developer-bio">
+                        Binondi Borthakur is a passionate developer and the creative mind behind Sketch Materials. With a deep love for the Sketchware Pro community and a commitment to making development tools accessible, Binondi has built Sketch Materials from the ground up — continuously improving and expanding it to serve developers around the world.
+                    </p>
+                    <div class="developer-links">
+                        <a href="https://github.com/Binondi" target="_blank" rel="noopener noreferrer" class="dev-link github-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="mailto:borthakurbinondi@gmail.com" class="dev-link email-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Sketch Materials" class="footer-logo-img">
+                        <h3 class="first-title">Sketch Materials</h3>
+                    </div>
+                    <p class="footer-brand-desc">
+                        The ultimate toolkit for Sketchware Pro developers. Build better apps, faster.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/Binondi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:borthakurbinondi@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="https://github.com/Binondi/Sketch-Materials/releases/download/1.3/Sketch.Materials.1.3.apk">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="https://github.com/Binondi/Sketch-Materials" target="_blank" rel="noopener noreferrer">GitHub Repo</a></li>
+                            <li><a href="https://github.com/Binondi/Sketch-Materials/releases" target="_blank" rel="noopener noreferrer">Changelog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2024 - 2026 Sketch Materials — Made with <i class="fas fa-heart" style="color: #ff5ef7;"></i> by Binondi Borthakur</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var popupMenu = document.getElementById('popup-menu');
+            popupMenu.classList.toggle('show');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            var popupMenu = document.getElementById('popup-menu');
+            var menuIcon = document.getElementById('menu-icon');
+            if (!menuIcon.contains(event.target) && !popupMenu.contains(event.target)) {
+                popupMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+
+</html>
